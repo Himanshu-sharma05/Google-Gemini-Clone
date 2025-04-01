@@ -19,7 +19,7 @@ function Sidebar() {
                 <img src={assets.plus_icon} alt="" />
                {extended? <p>New Chat</p> : null} 
             </div>
-            {extended? <div className="recent">
+            {extended ? <div className="recent">
                 <p className="recent-title">
                     Recent
                 </p>
@@ -27,7 +27,7 @@ function Sidebar() {
                     return (
                         <div 
                         key={index}
-                        onClick={()=> loadPrompt(item)}
+                        onClick={() => loadPrompt(item)}
                         className="recent-entry">
                         <img src={assets.message_icon} alt="" />
                         <p>{item.slice(0,18)}....</p>
